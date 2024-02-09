@@ -60,7 +60,7 @@ jobs:
           RELEASE_BRANCHES: .*
           WITH_V: false
           DRY_RUN: true
-      - run: echo "New version is ${{ steps.versionBump.outputs.new_tag }}"
+      - run: echo "New version is ${{ steps.versionBump.outputs.new_tag }}" 
 
       # Check package.json exists
       - name: Check package.json existence
